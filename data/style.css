@@ -1,0 +1,230 @@
+@charset "UTF-8";
+body{
+     background-image: url(ヘッダー.png);
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+}
+.group{
+  margin-bottom: 5%;
+}
+h1{
+  font-size: 5vw;
+  text-align: center;
+  color: #eaf6fd;
+  padding-bottom: 7vw;
+}
+h2{
+  font-size: 3vw;
+  text-align: center;
+  background-color: #dbedf0;
+  border-top: 3px solid #0c4da2;
+  border-bottom: 3px solid #0c4da2;
+}
+h3{
+  background-color: #dbedf0;
+  font-size: 2vw;
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 1%;
+}
+iframe{
+  border-style: none;
+  width: 100%;
+  height: 220vh;
+}
+.contents{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+article{
+  height: 100%;
+  width: 75%;
+}
+aside{
+  width: 25%;
+  font-size:0;
+  line-height:0;
+}
+.end{
+  background:rgba(219,237,240,.3);
+  background-size: 100%;
+}
+.text{
+  text-align: left;
+  padding-left: 15%;
+  font-size: 1.5vw;
+  background-color: #dbedf0;
+}
+.Line-Item{
+  text-align: center;
+  display: block;
+  padding-left: 0%;
+  color: #dbedf0;
+  font-size: 3vw;
+}
+/*フォーム!!!!!*/
+form{
+  background: linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
+  background: -moz-linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
+  background: -webkit-linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
+  text-align: left;
+  padding-left: 25%;
+}
+label{
+  font-size: 2vw;
+}
+.radio{
+  font-size: 1.5vw;
+}
+input[type="name"],
+input[type="email"],
+textarea{
+  margin-left: 5%;
+  background: rgba(0, 255, 255, 0.3);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  font-size: 1.5vw;
+  width: 75%;
+}
+textarea::-webkit-scrollbar {
+  display: none;
+}
+textarea{
+  font-size: 1.25vw;
+  max-width: 75%;
+  max-height: 20vw;
+  min-height: 10%;
+  min-height: 7vw;
+}
+input[type="radio"]{
+  width: 1vw;
+  height: 1vw;
+}
+input[type="submit"],
+button[type="submit"]{
+  margin-left: 5%;
+  border-style: none;
+  border-radius: 5px;
+  padding: 1% 4% 1% 4%;
+  background: #6A96E9;
+  color: black;
+  text-align: center;
+  font-size: 2vw;
+  transition: all 0.5s;
+}
+input[type="submit"],
+button[type="submit"]:hover{
+  color: white;
+  background: #0909D9;
+  padding: 1% 5% 1% 5%;
+}
+/*フォーム!!!!!*/
+@media (max-width:600px) {
+  .contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+  }
+  /*フォーム!!!!!*/
+  form{
+    background: linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
+    background: -moz-linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
+    background: -webkit-linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
+    text-align: left;
+    padding-left: 25%;
+  }
+  label{
+    font-size: 4vw;
+  }
+  .radio{
+    font-size: 4vw;
+  }
+  input[type="name"],
+  input[type="email"],
+  textarea{
+    margin-left: 5%;
+    background: rgba(0, 255, 255, 0.3);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    font-size: 5vw;
+    width: 75%;
+  }
+  textarea::-webkit-scrollbar {
+    display: none;
+  }
+  textarea{
+    font-size: 4vw;
+    max-width: 75%;
+    max-height: 40vw;
+    min-height: 20%;
+    min-height: 10vw;
+  }
+  input[type="radio"]{
+    width: 4vw;
+    height: 4vw;
+  }
+  input[type="submit"],
+  button[type="submit"]{
+    margin-left: 5%;
+    border-style: none;
+    border-radius: 5px;
+    padding: 4% 10% 4% 10%;
+    background: #6A96E9;
+    color: black;
+    text-align: center;
+    font-size: 4vw;
+    transition: all 0.5s;
+  }
+  input[type="submit"],
+  button[type="submit"]:hover{
+    color: white;
+    background: #0909D9;
+    padding: 4% 10% 4% 10%;
+  }
+  /*フォーム!!!!!*/
+  .end{
+    background-size: 150%;
+  }
+  .text{
+    text-align: left;
+    padding-left: 15%;
+    font-size: 4vw;
+  }
+  article{
+    width: 100%;
+  }
+  aside{
+    width: 100%;
+    font-size:0;
+    line-height:0;
+  }
+  h1{
+    font-size: 6vw;
+  }
+  h2{
+    font-size: 7vw;
+  }
+  h3{
+      font-size: 4vw;
+  }
+  iframe{
+    border-style: none;
+    width: 100%;
+    height: 100vh;
+  }
+  .Line-Item{
+    text-align: center;
+    display: block;
+    padding-left: 0%;
+    font-size: 5vw;
+  }
+}
+*{
+  text-decoration: none;
+  margin:0%;
+  padding:0%;
+}
