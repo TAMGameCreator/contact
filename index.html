@@ -24,37 +24,29 @@
              </div>
              <div class="group">
                <h2>CONTACT</h2>
-               <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdeZRhJlT_C-dilonnHoilik3MC3QC_e5NRXXwNWtt68dynGg/formResponse" onsubmit="submitted=true;" target="hidden_iframe" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve CEkLOc" data-shuffle-seed="6382051557991243572" data-response="%.@.[]]" data-dlp-data="%.@.null,false,[]]" data-first-entry="0" data-last-entry="4" data-is-first-page="true">
-                 <div><label for="name">お名前</label></div>
-                 <div><input type="name" id="name" name="entry.725970278" required></div>
-                 <div style="margin-top:5%;"><label for="e-email">メールアドレス</label></div>
-                 <div><input type="email" id="email" name="entry.371644481"></div>
-                 <!--ラジオボタン-->
-                 <div style="margin-top:5%;"><label>このサイトの感想を聞かせてください</label></div>
-                 <div style="margin-left:5%;">
-                   <input type="radio" name="entry.115664367" id="best" value="とても良い" checked>
-                   <label for="best" class="radio">とても良い</label>
+               <!--ここから-->
+               <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdeZRhJlT_C-dilonnHoilik3MC3QC_e5NRXXwNWtt68dynGg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                 <div id="your_name">
+                   <label class="text_form_top , label" for="name">お名前(ニックネームも可)</label>
+                   <div class="text"><input name="entry.725970278" id="name" type="text" placeholder="名前を入力(ニックネームも可)" maxlength="50" required></div>
                  </div>
-                 <div style="margin-left:5%;">
-                   <input type="radio" name="entry.115664367" id="good" value="まあまあ良い">
-                   <label for="good" class="radio">まあまあ良い</label>
+                 <div id="Mail_Group">
+                   <label class="text_form , label" for="Reply_Mail">メールアドレス</label>
+                   <div class="text"><input name="entry.371644481" type="mail" id="email" placeholder="someone@example.com"></div>
                  </div>
-                 <div style="margin-left:5%;">
-                   <input type="radio" name="entry.115664367" id="so-so" value="普通">
-                   <label for="so-so" class="radio">普通</label>
+                 <label class="text_form , label" for="How_to_Reply">このサイトの感想を聞かせてください</label>
+                 <div class="text">
+                   <input id="best" type="radio" name="entry.115664367" value="とても良い" checked><label for="best">とても良い</label><br>
+                   <input id="good" type="radio" name="entry.115664367" value="まあまあ良い"><label for="good">まあまあよい</label><br>
+                   <input id="so-so" type="radio" name="entry.115664367" value="普通"><label for="so-so">普通</label><br>
+                   <input id="bad" type="radio" name="entry.115664367" value="まあまあ悪い"><label for="bad">まあまあ悪い</label><br>
+                   <input id="verybad" type="radio" name="entry.115664367" value="とても悪い"><label for="verybad">とても悪い</label><br>
                  </div>
-                 <div style="margin-left:5%;">
-                   <input type="radio" name="entry.115664367" id="bad" value="まあまあ悪い">
-                   <label for="bad" class="radio">まあまあ悪い</label>
+                 <div id="Inquiry_Details">
+                   <label class="text_form , label" for="Contact_us">コメント</label>
+                   <div class="text"><textarea name="entry.648309396" type="textarea" id="Contact_us" placeholder="コメントを入力"></textarea></div>
                  </div>
-                 <div style="margin-left:5%;">
-                   <input type="radio" name="entry.115664367" id="verybad" value="とても悪い">
-                   <label for="verybad" class="radio">とても悪い</label>
-                 </div>
-                 <!--ラジオボタン-->
-                 <div style="margin-top:5%;"><label for="message">コメント</label></div>
-                 <div><textarea id="message" name="entry.648309396"></textarea></div>
-                 <div style="margin-top:5%;"><button type="submit" name="submit" value="送信">送信</button></div>
+                 <div class="text"><input type="submit" id="submit_button" value="送信"></div>
                </form>
              </div>
              <div class="group">
@@ -79,8 +71,8 @@
          </div>
          <div class="end">
            <div class="Line-Item">TAMGameCreator ゲームの部屋</div>
-         </div>         
-         <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted)               
+         </div>
+         <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted)
 {window.location='https://tamgamecreator.github.io/contact-thank-you/';}"
        </body>
        <script type="text/javascript">var hidden_iframe.submitted = false</script>
