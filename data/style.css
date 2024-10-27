@@ -65,63 +65,94 @@ aside{
   color: #dbedf0;
   font-size: 3vw;
 }
-/*フォーム!!!!!*/
+/*ここからお問い合わせフォームの装飾*/
 form{
-  background: linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
-  background: -moz-linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
-  background: -webkit-linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
-  text-align: left;
-  padding-left: 25%;
+  background-color: #dbedf0;
 }
-label{
+.text_form , .text_form_top{
+  text-align: left;
+  margin-left: 15%;
+  width: auto;
   font-size: 2vw;
 }
-.radio{
-  font-size: 1.5vw;
+.label{
+   display: inline-block;
+   border-left: solid 5px #5250e0;
+   margin-top: 3vw;
+   vertical-align:top;
+   font-weight: bold;
+ }
+ input[type="text"],
+ input[type="mail"],
+input[type="username"]{
+   border: none;
+   Outline: none;
+   font-size: 1.5vw;
+   width:30vw;
+   height:2vw;
+ }
+ #Contact_us{
+   font-size: 1.5vw;
+   width:30vw;
+   height:10vw;
+   border: none;
+   resize: none;
+   Outline: none;
+ }
+ input[type="radio"]{
+   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 60%;
+  border: 2px solid #ccc;
+  transition: .25s;
+ }
+ input[type="radio"]:hover{
+    border-color: cyan;
+    box-shadow: 0 0 0.5vw cyan, 0 0 2vw cyan, 0 0 3vw cyan, 0 0 5vw white;
+ }
+ input[type="radio"]:checked {
+  border-color: #007bff;
+  background-color: #007bff;
+  box-shadow: 0 0 0.5vw cyan, 0 0 2vw cyan, 0 0 5vw white;
 }
-input[type="name"],
-input[type="email"],
-textarea{
-  margin-left: 5%;
-  background: rgba(0, 255, 255, 0.3);
-  border: 1px #fff solid;
-  border-radius: 5px;
-  font-size: 1.5vw;
-  width: 75%;
+input[type="checkbox"]{
+  -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ width: 1.5vw;
+ height: 1.5vw;
+ border-radius: 60%;
+ border: 2px solid #ccc;
+ transition: .25s;
 }
-textarea::-webkit-scrollbar {
-  display: none;
+input[type="checkbox"]:hover{
+   border-color: 	#6CD404;
+   box-shadow: 0 0 0.5vw green, 0 0 2vw #6CD404, 0 0 3vw cyan, 0 0 5vw white;
 }
-textarea{
-  font-size: 1.25vw;
-  max-width: 75%;
-  max-height: 20vw;
-  min-height: 10%;
-  min-height: 7vw;
+input[type="checkbox"]:checked {
+ border-color: 	#6CD404;
+ background-color: 	#6CD404;
+ box-shadow: 0 0 0.5vw #6CD404, 0 0 5vw white;
 }
-input[type="radio"]{
-  width: 1vw;
-  height: 1vw;
-}
-input[type="submit"],
-button[type="submit"]{
-  margin-left: 5%;
+input[type="submit"]{
+  margin-top: 5%;
   border-style: none;
   border-radius: 5px;
   padding: 1% 4% 1% 4%;
-  background: #6A96E9;
+  background: cyan;
   color: black;
   text-align: center;
   font-size: 2vw;
   transition: all 0.5s;
 }
-input[type="submit"],
-button[type="submit"]:hover{
-  color: white;
-  background: #0909D9;
-  padding: 1% 5% 1% 5%;
+input[type="submit"]:hover{
+  background: white;
+  box-shadow: 0 0 0.5vw cyan, 0 0 2vw cyan, 0 0 3vw cyan, 0 0 5vw white;
 }
-/*フォーム!!!!!*/
+/*ここまでお問い合わせフォームの装飾*/
 @media (max-width:600px) {
   .contents{
     display: flex;
@@ -130,63 +161,101 @@ button[type="submit"]:hover{
     align-items: flex-start;
     text-align: center;
   }
-  /*フォーム!!!!!*/
+  /*ここからお問い合わせフォームの装飾*/
   form{
-    background: linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
-    background: -moz-linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
-    background: -webkit-linear-gradient(135deg,rgba(219,237,240,0.25), rgba(219,237,240,1));
+    background-color: #dbedf0;
+  }
+  .text_form{
     text-align: left;
-    padding-left: 25%;
-  }
-  label{
+    margin-left: 15%;
+    width: auto;
     font-size: 4vw;
+    margin-top: 5vw;
   }
-  .radio{
+  .text_form_top{
+    text-align: left;
+    margin-left: 15%;
+    width: auto;
     font-size: 4vw;
+    margin-top: 0vw;
   }
-  input[type="name"],
-  input[type="email"],
-  textarea{
-    margin-left: 5%;
-    background: rgba(0, 255, 255, 0.3);
-    border: 1px #fff solid;
-    border-radius: 5px;
-    font-size: 5vw;
-    width: 75%;
-  }
-  textarea::-webkit-scrollbar {
-    display: none;
-  }
-  textarea{
-    font-size: 4vw;
-    max-width: 75%;
-    max-height: 40vw;
-    min-height: 20%;
-    min-height: 10vw;
-  }
-  input[type="radio"]{
+  .label{
+     display:block;
+     border-left: solid 5px #5250e0;
+     vertical-align:top;
+     font-weight: bold;
+   }
+   input[type="text"],
+   input[type="mail"],
+  input[type="username"]{
+     border: none;
+     Outline: none;
+     font-size: 4vw;
+     width:60vw;
+     height:5vw;
+   }
+   #Contact_us{
+     font-size: 4vw;
+     width:60vw;
+     height:20vw;
+     border: none;
+     resize: none;
+     Outline: none;
+   }
+   input[type="radio"]{
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 4vw;
     height: 4vw;
+    border-radius: 60%;
+    border: 2px solid #ccc;
+    transition: .25s;
+   }
+   input[type="radio"]:hover{
+      border-color: cyan;
+      box-shadow: 0 0 0.5vw cyan, 0 0 2vw cyan, 0 0 3vw cyan, 0 0 5vw white;
+   }
+   input[type="radio"]:checked {
+    border-color: #007bff;
+    background-color: #007bff;
+    box-shadow: 0 0 0.5vw cyan, 0 0 2vw cyan, 0 0 5vw white;
   }
-  input[type="submit"],
-  button[type="submit"]{
-    margin-left: 5%;
+  input[type="checkbox"]{
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   width: 4vw;
+   height: 4vw;
+   border-radius: 60%;
+   border: 1px solid #ccc;
+   transition: .25s;
+  }
+  input[type="checkbox"]:hover{
+     border-color: 	#6CD404;
+     box-shadow: 0 0 0.5vw green, 0 0 2vw #6CD404, 0 0 3vw cyan, 0 0 5vw white;
+  }
+  input[type="checkbox"]:checked {
+   border-color: 	#6CD404;
+   background-color: 	#6CD404;
+   box-shadow: 0 0 0.5vw #6CD404, 0 0 5vw white;
+  }
+  input[type="submit"]{
+    margin-top: 5%;
     border-style: none;
     border-radius: 5px;
-    padding: 4% 10% 4% 10%;
-    background: #6A96E9;
+    padding: 1% 4% 1% 4%;
+    background: cyan;
     color: black;
     text-align: center;
-    font-size: 4vw;
+    font-size:5vw;
     transition: all 0.5s;
   }
-  input[type="submit"],
-  button[type="submit"]:hover{
-    color: white;
-    background: #0909D9;
-    padding: 4% 10% 4% 10%;
+  input[type="submit"]:hover{
+    background: white;
+    box-shadow: 0 0 0.5vw cyan, 0 0 2vw cyan, 0 0 3vw cyan, 0 0 5vw white;
   }
-  /*フォーム!!!!!*/
+  /*ここまでお問い合わせフォームの装飾*/
   .end{
     background-size: 150%;
   }
