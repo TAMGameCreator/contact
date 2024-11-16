@@ -15,7 +15,7 @@
            <h1 style="text-align:center;margin-top:7%;">TAMGameCreator ゲームの部屋</h1>
          </header>
          <div class="contents">
-           <article>
+           <article id="article">
              <div class="group">
                <h2>感想とかお問い合わせとか</h2>
                <div class="text">感想とかお問い合わせとか、いろいろできそうな所です。</div>
@@ -66,7 +66,7 @@
              </div>
            </article>
            <aside>
-             <iframe src="https://tamgamecreator.github.io/update/"width="100%"></iframe>
+             <iframe src="https://tamgamecreator.github.io/update/"width="100%" id="resizableIframe"></iframe>
            </aside>
          </div>
          <div class="end">
@@ -76,4 +76,22 @@
 {window.location='https://tamgamecreator.github.io/contact-thank-you/';}"
        </body>
        <script type="text/javascript">var hidden_iframe.submitted = false</script>
+       <script>
+              
+         window.addEventListener('message', (e) => {
+           if (e.data.hasOwnProperty('iframeHeight')) {
+             const iframe = document.getElementById('resizableIframe'); // resizableIframeはiframeのID名に置き換える
+             if(document.getElementById('article').style.height < e.data.iframeHeight){
+               iframe.style.height = `${e.data.iframeHeight + 50}px`;
+             }
+             else{
+               iframe.style.height = document.getElementById('article').style.height;
+             }
+           }
+           else{
+             const iframe = document.getElementById('resizableIframe'); // resizableIframeはiframeのID名に置き換える
+             iframe.style.height = document.getElementById('article').style.height;
+           }
+         });
+       </script>
 </html>
